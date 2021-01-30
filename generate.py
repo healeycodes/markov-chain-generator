@@ -5,12 +5,13 @@ import random
 
 def get_source(dir):
     '''
-    Look inside src/{dir}/ for text files and concatenate their contents.
+    Look inside src/<dir>/ for text files and concatenate their contents.
     '''
     text = ""
     files = [
         # os.path.join to keep things cross-platform friendly
-        os.path.join('src', dir, name) for name in os.listdir(os.path.join('src', dir))]
+        os.path.join('src', dir, name) for name in os.listdir(os.path.join('src', dir))
+    ]
     for name in files:
         with open(name, encoding="utf8") as f:
             text += "\n"
@@ -31,14 +32,13 @@ def build_model(source, state_size):
             model[previous_words].append(current_word)
         else:
             model[previous_words] = [current_word]
-        i += 1
 
     return model
 
 
 def generate_text(model, state_size, length):
     '''
-    Consume a Markov chain model (make sure to specify the state_size used)
+    Consume a Markov chain model (make sure to specify the <state_size> used)
     to generate text that is at least <length> size long.
     '''
     possible_starters = random.sample(list(model.keys()), len(model.keys()))
