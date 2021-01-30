@@ -25,8 +25,4 @@ And really between two and three, there is no comfortable feeling. But the littl
 
 <br>
 
-<small>
-The Edgar Allen Poe and Oscar Wilde text corpuses were taken from https://github.com/nlp-compromise/nlp-corpus
-
-and I'm unsure of their license. The code is MIT.
-</small>
+<sub>The Edgar Allen Poe and Oscar Wilde text corpuses were taken from https://github.com/nlp-compromise/nlp-corpus and I'm unsure of their license. The code is MIT.</sub>
