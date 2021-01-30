@@ -10,7 +10,7 @@ See the example by running `python generate.py`.
 
 Pass in a corpus, a state size, and a minimum length. Make sure the corpus uses capital letters and full-stops.
 
-```
+```python
 state_size = 2
 length = 100
 source = get_source('poe') # or some corpus as a string
