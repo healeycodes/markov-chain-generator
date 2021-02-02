@@ -1,12 +1,10 @@
 # markov-chain-generator
 
-Use this library to generate random realistic text via Markov chain models.
+Use this library to generate random realistic text via Markov chain models. See the example by running `python generate.py`.
 
 <br>
 
-See the example by running `python generate.py`.
-
-<br>
+## How?
 
 Pass in a corpus, a state size, and a minimum length. Make sure the corpus uses capital letters and full-stops.
 
@@ -14,16 +12,22 @@ Pass in a corpus, a state size, and a minimum length. Make sure the corpus uses 
 from generate import get_source, build_model, generate_text
 
 state_size = 2
-length = 100
+min_length = 100
 source = get_source('poe') # or some corpus as a string
 poe = build_model(source, state_size)
-text = generate_text(poe, state_size, 100)
+text = generate_text(poe, state_size, min_length)
 print(text)
 
 '''
 And really between two and three, there is no comfortable feeling. But the little spalpeen Mounseer Maiter-di-dauns that plumped his silf right down by the pond. Upon his own house, when wit and jollity reigned supreme-dampened a little, of course, expressed in regard to his conscience and himself. But although Hop-Frog, through the nose; the intestines through an avenue two miles long, and might have been a little amused. When we had great reason to congratulate ourselves upon our good fortune. Approaching the table, and in the way of indemnification inserted his left thumb in the external world, when, with many a fine thing.
 '''
 ```
+
+<br>
+
+## Tests
+
+Some basic tests can be ran with `python tests.py`
 
 <br>
 
