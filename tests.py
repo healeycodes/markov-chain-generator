@@ -4,7 +4,7 @@ from generate import get_source, build_model, generate_text
 
 def test_possible_sentences():
     state_size = 2
-    min_length = 100
+    min_length = 1000
     source = 'An apple is very good. An orange is very bad.'
     fruit_talk = build_model(source, state_size)
 
