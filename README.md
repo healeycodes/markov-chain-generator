@@ -1,6 +1,8 @@
 # markov-chain-generator
 
-Use this library to generate random realistic text via Markov chain models. See the example by running `python generate.py`.
+Use this library to generate random realistic text via Markov chain models.
+
+See the example by running `python generate.py`.
 
 <br>
 
